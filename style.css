@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Navigasi */
+nav {
+  background-color: #222d6b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 70px;
+  gap: 500px;
+  position: fixed;
+  z-index: 9999;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul li a:hover {
+  color: rgb(95, 211, 253);
+  font-style: italic;
+}
+
+/* Hai */
+.hi {
+  color: #ffffff;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #285aeb;
+}
+
+.hi img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid white;
+}
+
+.hi h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hi p {
+  margin-bottom: 70px;
+}
+.hi button {
+  height: 30px;
+  width: 370px;
+  border-radius: 50px;
+  border: none;
+}
+
+.hi button:hover {
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  font-style: italic;
+}
+
+h1 span::before {
+  content: "";
+  animation: gerak infinite 5s ease-in;
+  transform: translateY(-50%);
+  color: #9dc1ce;
+  font-size: 60px;
+}
+
+@keyframes gerak {
+  0% {
+    content: "Barakallah Fii Umrik Yaaa";
+  }
+  50% {
+    content: "M.Chandra Afrizal";
+  }
+  100% {
+    content: "Semoga Sehat Selaluuuu";
+  }
+}
+
+/* Pendidikan-Softskill */
+.pendidikan {
+  color: #000000;
+  height: 600px;
+  margin-top: 40px;
+}
+
+.pendidikan h1 {
+  color: #333a3b;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.kiri,
+.tengah,
+.kanan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  height: 320px;
+  background-color: #819da1;
+  color: #ffffff;
+  padding: 30px 30px;
+  margin: 70px 20px 20px;
+  transition: all 0.5s;
+  border: 3px solid white;
+}
+
+.kiri:hover,
+.tengah:hover,
+.kanan:hover {
+  background-color: #1c24f7;
+  color: #ffffff;
+  border: 3px solid white;
+}
+.content img {
+  height: 80px;
+  width: 80px;
+}
+
+.content h3 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.content p {
+  padding: 0px 25px;
+  font-size: 17px;
+}
+
+.softskill {
+  color: #000000;
+  height: 600px;
+  margin-top: 8px;
+}
+
+.softskill h1 {
+  color: #333a3b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: white;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+footer ul li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 3px solid white;
+  color: #ffffff;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+
+  color: transparent;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.wa a {
+  margin-left: -7px;
+}
+
+footer ul li a img {
+  margin-bottom: 15px;
+}
+
+ul li a img {
+  transition: all 0.3s;
+}
+
+ul li a img:hover {
+  transform: scale(1.15);
+}
+
+.yt a img:hover {
+  background-color: #ff0c0c;
+}
+
+.ig a img:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.fb a img:hover {
+  background-color: #4109c5;
+}
+
+.wa a img:hover {
+  background-color: #3fa704;
+}
+
+.yt a:hover,
+.ig a:hover,
+.fb a:hover,
+.wa a:hover {
+  color: #ffffff;
+  outline-offset: 3px;
+}
